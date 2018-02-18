@@ -1,0 +1,37 @@
+form{
+    justify-content: space-between;
+
+    input{
+        width: 87%;
+    }
+
+    button{
+        width: 10%;
+    }
+}
+
+li{
+    display: flex;
+
+    p{
+        margin: 0;
+    }
+
+
+    .conteudo{
+        width: 75%;
+    }
+
+    .usuario{
+        font-size: 10px;
+        width: 25%;
+
+        .nome{
+            font-weight: bold;
+        }
+        
+        .email{
+            font-size: 10px;
+        }
+    }
+}

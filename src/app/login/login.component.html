@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    <!-- A diretiva ngModel faz a ligação desse input com uma variável do Javascript -->
+    <input class="form-control" name="nome" placeholder="Nome" [(ngModel)]="formulario.nome">
+  </div>
+  <div class="form-group">
+    <!-- A diretiva ngModel faz a ligação desse input com uma variável do Javascript -->
+    <input class="form-control" name="email" placeholder="E-mail" [(ngModel)]="formulario.email">
+  </div>
+  <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+</form>
