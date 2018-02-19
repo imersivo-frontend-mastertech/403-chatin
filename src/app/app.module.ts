@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ListaComponent } from './lista/lista.component';
 import { UsuarioService } from './usuario.service';
-
+import { FacebookModule } from 'ngx-facebook';
 
 // As rotas representam cada página da aplicação. Lembre que a 
 // troca de páginas não acontece em realidade já que não existe
@@ -39,7 +39,8 @@ const rotas:Routes = [
     BrowserModule,
     RouterModule.forRoot(rotas),
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FacebookModule.forRoot()
   ],
   providers: [
     UsuarioService
